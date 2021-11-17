@@ -1,0 +1,18 @@
+@import './root.scss';
+@media only screen and (max-width: 375px){
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100rem;
+        background-color: $Paleblue;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 16px 48px;
+    }
+}

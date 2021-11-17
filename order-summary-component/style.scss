@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import './root.scss'; 
+
+*{
+    font-style: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    background-color: $Paleblue;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .main-body-component{
+        padding: 80px 30px;
+        .main-component{
+            background-color: white;
+            border-radius: 18px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            .header{
+                img{
+                    border-top-left-radius: 18px;
+                    border-top-right-radius: 18px;
+                }
+            }
+            .hero{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+    
+                .hero-header{
+                    h1{
+                        font-weight: 900;
+                        color: $Darkblue;
+                    }
+                    p{
+                        font-size: 16px;
+                        color: $Desaturatedblue;               
+                    }
+                }
+    
+                .hero-body{
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+                    background-color: $Verypaleblue;
+                    padding: 15px 21px;
+                    border-radius: 18px;
+        
+    
+                    .icon{
+                        margin-right: 18px;
+                    }
+                    .text{
+                        margin-right: 5rem;
+                        font-weight: 900;
+                        color: $Darkblue;
+                        span{
+                            font-weight: 500;
+                            color: $Desaturatedblue;
+                        }
+                    }
+                    .link{
+                        margin-left: auto;
+                    }
+                }
+            }
+            .btns{
+                display: flex;
+                flex-direction: column;
+                padding: 1.8rem 4rem;
+                
+                button{
+                    padding: 0.5rem;
+                    font-size: 16px;
+                }
+    
+                #Cancel{
+                    border: none;
+                    padding: 20px;
+                    transition: 0.6s;
+                    cursor: pointer;
+                    p{
+                        padding: 0%;
+                        margin: 0%;
+                        font-weight: 700;
+                        color: $Desaturatedblue;
+                    }
+                }
+    
+                #Proceed{
+                    background-color: $Brightblue;
+                    padding: 20px;
+                    color: white;
+                    border: 0.5px solid $Darkblue;
+                    border-radius: 13px;
+                    box-shadow: hsla(245, 75%, 52%, 0.459) 0px 20px 25px -5px, hsla(245, 75%, 52%, 0.5) 0px 10px 10px -5px;
+                    transition: 0.6s;
+                    cursor: pointer;
+                }
+    
+                #Proceed:hover{
+                        background-color: hsl(245, 100%, 72%);
+                        transition: 0.6s;
+                }
+            }
+        }
+    }
+}

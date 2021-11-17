@@ -1,0 +1,28 @@
+/*### Neutral*/
+/*## Typography*/
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100rem;
+    background-color: #e0e8ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 16px 48px;
+  }
+}
+/*# sourceMappingURL=resize.css.map */
